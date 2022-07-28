@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { text-align: center; }
+    div { margin: 1rem; }
+    a:link { color: red; } /*unvisited link */
+    a:visited { color: lightsalmon; }/* visited link*/
+
+    .hoverC1:hover { color: lightskyblue; }
+
+    .hoverC1 span:first-child { text-transform: uppercase; color: green; }
+
+    .surprise { display:none; color: red; }
+    .hoverC1:hover .suprprise { display: block; }
+
+    .foucsC1 input:focus { background-color: orange; }
+
+    .enableDisable input:enabled { background-color: green; }
+    .enableDisable iput:disabled { border:1px solid lightcoral; }
+
+    .lastChild span:last-child { color: aqua; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h2>PSEUDO-CLASSES IN CSS</h2>
+  <h3>There are a lot of pseudo-classes in css. <br> full list
+    <a href="https://developer.mozolla.org/en-US/docs/web/CSS/pseudo-classes" target="blank"> here</a>
+  </h3>
+  <div class="hoverC1">Hover <span> first Child</span> <span class="surprise">Surprise</span></div>
+  <div class="foucsC1">Focus: <input placeholder="click here"><input placeholder="click here"></div>
+  <div class="enableDisable"><input><input disabled="disabled"></div>
+  <div class="lastChild"><span>1</span><span>2</span><span>3</span></div> 
+</body>
+</html>
